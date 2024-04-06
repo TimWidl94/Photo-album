@@ -1,15 +1,14 @@
-
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component } from '@angular/core';
 import { HeaderComponent } from '../shared/header/header.component';
+import { PhotoSectionComponent } from '../photo-section/photo-section.component';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-landingpage',
   standalone: true,
-  imports: [HeaderComponent, ],
+  imports: [HeaderComponent, PhotoSectionComponent, CommonModule ],
   templateUrl: './landingpage.component.html',
-  styleUrl: './landingpage.component.scss'
+  styleUrl: './landingpage.component.scss',
 })
-export class LandingpageComponent {
-
-}
+export class LandingpageComponent {}
